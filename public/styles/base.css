@@ -1,0 +1,69 @@
+html
+{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body
+{
+    background: radial-gradient(ellipse at bottom left, #2548c1 0%, #2548c1 65%, white 65.10%, white 100%) !important;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+header, nav.main-menu
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+h1
+{
+    text-align: center;
+    color: #2548c1;
+    text-shadow: #00000017 3px 3px 3px;
+}
+
+nav.main-menu > ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+nav.main-menu > ul > li { display: block; color: #2548c1; }
+
+li > a
+{
+    color: inherit;
+    text-decoration: none;
+}
+
+nav.main-menu > ul > li > a
+{
+    display: block;
+    padding: 20px;
+}
+
+.base-content, .contact
+{
+    margin: 20px;
+    color: white;
+    font-size: 1.2em;
+    position: absolute;
+    box-sizing: border-box;
+    max-width: 50%;
+    top: 50%;
+}
+
+.contact > ul > li
+{
+    list-style-position: outside;
+}
