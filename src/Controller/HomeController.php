@@ -1,3 +1,5 @@
+<?php
+
 namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -9,9 +11,11 @@ class HomeController extends AbstractController
     #[Route('/')]
     public function index(): Response
     {
-        return $this->render("base.html.twig", [
+        return $this->render("/base.html.twig", [
             "title" => "Strona główna",
             "content" => "Witamy na stronie głównej"    
         ]);
     }
 }
+
+?>
