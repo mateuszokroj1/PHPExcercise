@@ -10,6 +10,8 @@ body
     background: radial-gradient(ellipse at bottom left, #2548c1 0%, #2548c1 65%, white 65.10%, white 100%) !important;
     box-sizing: border-box;
     min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 header, nav.main-menu
@@ -50,6 +52,19 @@ nav.main-menu > ul > li > a
 {
     display: block;
     padding: 20px;
+    transition-property: background-color, color;
+    transition-duration: 300ms;
+}
+
+@media (any-hover: hover)
+{
+
+    nav.main-menu > ul > li > a:hover
+    {
+        background: #2548c1;
+        color: white;
+    }
+
 }
 
 .base-content, .contact
@@ -66,4 +81,40 @@ nav.main-menu > ul > li > a
 .contact > ul > li
 {
     list-style-position: outside;
+}
+
+@media screen and (max-width: 768px) /* Mobile viewport */
+{
+    body
+    {
+        background: #2548c1 !important;
+    }
+
+    h1
+    {
+        color: white;
+        text-shadow: none;
+    }
+
+    nav.main-menu > ul
+    {
+        margin: 0;
+        padding: 0;
+        display: block;
+        background: white;
+    }
+
+    nav.main-menu > ul > li { display: block; color: #2548c1; }
+
+    .base-content, .contact
+    {
+        margin: 20px auto;
+        padding: 0 20px;
+        width: fit-content;
+        color: white;
+        font-size: 1.2em;
+        position: absolute;
+        box-sizing: border-box;
+        top: 50%;
+    }
 }
