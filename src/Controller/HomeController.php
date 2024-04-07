@@ -12,9 +12,15 @@ class HomeController extends AbstractController
     public function index(): Response
     {
         return $this->render("/base.html.twig", [
-            "title" => "Strona główna",
+            "title" => "Witamy!",
             "content" => "Witamy na stronie głównej"    
         ]);
+    }
+
+    #[Route('/kontakt')]
+    public function contact(): Response
+    {
+        return $this->render("/contact.html.twig");
     }
 }
 
